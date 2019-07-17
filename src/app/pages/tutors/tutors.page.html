@@ -1,32 +1,69 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons slot="start">
-            <ion-back-button></ion-back-button>
-          </ion-buttons>
-      <ion-title>تطوير و برمجة المواقع و التطبيقات</ion-title>
-      
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-  <ion-list>
+  <ion-toolbar>
+      <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>المدربين </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
     <ion-card>
-    <ion-item>
-      <ion-thumbnail slot="end">
-        <img src="http://robotech-it.com/sites/all/themes/robust/images/tech-7.png">
-      </ion-thumbnail>
-      <ion-label>دروبال</ion-label>
-    </ion-item>
-    </ion-card>
-    <ion-card>
-        <ion-item >
-          <ion-thumbnail slot="end">
-            <img src="C:\Users\fatto\Desktop\IonicProjects\maharat\src\app\avatar\f0f98fed-b61b-409d-a855-4cefd898aadf.jpg">
+        <ion-item (click)="goToTutor()">
+          <ion-thumbnail slot="start">
+            <img src="assets\avatar\yosri.jpg">
+          </ion-thumbnail>
+          <ion-label>
+              <h1>يسري يحمد</h1>
+              <p>خبير دروبال</p>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+        <ion-card>
+            <ion-item (click)="goToTutor()">
+              <ion-thumbnail slot="start">
+                <img src="assets\avatar\abdullah.jpg">
               </ion-thumbnail>
-              <ion-label></ion-label>
+              <ion-label>
+                  <h1>عبدالله التايه</h1>
+                  <p>مصمم</p>
+              </ion-label>
             </ion-item>
-            
             </ion-card>
-  </ion-list>
-  </ion-content>
-  
+            <ion-card>
+                <ion-item (click)="goToTutor()">
+                  <ion-thumbnail slot="start">
+                    <img src="assets\avatar\ahmad_aboyahia.jpg">
+                  </ion-thumbnail>
+                  <ion-label>
+                      <h1> أحمد أبويحيى</h1>
+                      <p>مطور واجهات أمامية</p>
+                  </ion-label>
+                </ion-item>
+                </ion-card>
+                <ion-card>
+                    <ion-item (click)="goToTutor()">
+                      <ion-thumbnail slot="start">
+                        <img src="assets\avatar\abdulrahman.jpg">
+                      </ion-thumbnail>
+                      <ion-label>
+                          <h1>عبدالرحمن إبراهيم</h1>
+                          <p>خبير ايونيك و دروبال</p>
+                      </ion-label>
+                    </ion-item>
+                    </ion-card>
+                    <ion-card>
+                        <ion-item (click)="goToTutor()">
+                          <ion-thumbnail slot="start">
+                            <img src="assets\avatar\ahmad_aboghazalah.jpg">
+                          </ion-thumbnail>
+                          <ion-label>
+                              <h1>أحمد أبوغزالة</h1>
+                              <p>خبير ايونيك</p>
+                          </ion-label>
+                        </ion-item>
+                        </ion-card>
+
+</ion-list>
+</ion-content>

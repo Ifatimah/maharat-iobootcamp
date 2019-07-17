@@ -19,7 +19,8 @@ const routes: Routes = [
     loadChildren: './pages/topic/topic.module#TopicPageModule' },
   { path: 'courses', 
     loadChildren: './pages/courses/courses.module#CoursesPageModule' },
-  { path: 'tutors', loadChildren: './pages/tutors/tutors.module#TutorsPageModule' }
+  { path: 'tutors', loadChildren: './pages/tutors/tutors.module#TutorsPageModule' },
+  { path: 'tutor', loadChildren: './pages/tutor/tutor.module#TutorPageModule' }
 ];
 
 @NgModule({

@@ -16,31 +16,25 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
-    ,
-    {
       title: 'المواضيع',
       url: '/topic',
       icon: ''
     },
     {
       title: 'المدربين',
-      url: '/list',
+      url: '/tutors',
       icon: ''
     }
     ,
     {
       title: 'من نحن',
-      url: '/list',
+      url: '/',
       icon: ''
     }
     ,
     {
       title: 'تسجيل الخروج ',
-      url: '/list',
+      url: '/',
       icon: ''
     }
   ];
