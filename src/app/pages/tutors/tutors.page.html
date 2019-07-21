@@ -3,16 +3,18 @@
       <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>المدربين </ion-title>
+    <ion-title class="ion-text-right">المدربين </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content style="--background: url('../background.jpg') ">
 <ion-list>
-    <ion-card>
-        <ion-item (click)="goToTutor()">
-          <ion-thumbnail slot="start">
-            <img src="assets\avatar\yosri.jpg">
+
+
+    <ion-card >
+        <ion-item (click)="goToTutor()" class ="ion-text-right"> 
+          <ion-thumbnail slot="end">
+            <img  src="assets\avatar\yosri.jpg">
           </ion-thumbnail>
           <ion-label>
               <h1>يسري يحمد</h1>
@@ -20,9 +22,11 @@
           </ion-label>
         </ion-item>
         </ion-card>
+
+
         <ion-card>
-            <ion-item (click)="goToTutor()">
-              <ion-thumbnail slot="start">
+            <ion-item (click)="goToTutor()" class ="ion-text-right">
+              <ion-thumbnail slot="end">
                 <img src="assets\avatar\abdullah.jpg">
               </ion-thumbnail>
               <ion-label>
@@ -31,9 +35,10 @@
               </ion-label>
             </ion-item>
             </ion-card>
+
             <ion-card>
-                <ion-item (click)="goToTutor()">
-                  <ion-thumbnail slot="start">
+                <ion-item (click)="goToTutor()" class ="ion-text-right"> 
+                  <ion-thumbnail slot="end">
                     <img src="assets\avatar\ahmad_aboyahia.jpg">
                   </ion-thumbnail>
                   <ion-label>
@@ -43,8 +48,8 @@
                 </ion-item>
                 </ion-card>
                 <ion-card>
-                    <ion-item (click)="goToTutor()">
-                      <ion-thumbnail slot="start">
+                    <ion-item (click)="goToTutor()" class ="ion-text-right">
+                      <ion-thumbnail slot="end">
                         <img src="assets\avatar\abdulrahman.jpg">
                       </ion-thumbnail>
                       <ion-label>
@@ -54,8 +59,8 @@
                     </ion-item>
                     </ion-card>
                     <ion-card>
-                        <ion-item (click)="goToTutor()">
-                          <ion-thumbnail slot="start">
+                        <ion-item (click)="goToTutor()" class ="ion-text-right">
+                          <ion-thumbnail slot="end">
                             <img src="assets\avatar\ahmad_aboghazalah.jpg">
                           </ion-thumbnail>
                           <ion-label>

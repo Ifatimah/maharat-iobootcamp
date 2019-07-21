@@ -3,21 +3,35 @@
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>تطوير و برمجة المواقع و التطبيقات</ion-title>
+    <ion-title class="ion-text-right">تطوير و برمجة المواقع و التطبيقات</ion-title>
   </ion-toolbar>
 
 </ion-header>
 
-<ion-content>
-<ion-list>
+<ion-content style="--background: url('../background.jpg') ">
+
+
+  <!--
   <ion-card>
   <ion-item (click)="goToTutors()">
     <ion-thumbnail slot="end">
       <img src="assets/avatar/drupal.png">
     </ion-thumbnail>
     <ion-label>دروبال</ion-label>
+   
   </ion-item>
   </ion-card>
+-->
+<ion-grid > 
+  <ion-row >
+    <ion-col class="ion-text-center" >    
+                  <img  (click)="goToTutors()" class = "courses-images "  src="assets/drupal.png">        
+    </ion-col>
+  </ion-row>
+
+ 
+
+ <!--
   <ion-card>
       <ion-item (click)="goToTutors()">
         <ion-thumbnail slot="end">
@@ -26,7 +40,20 @@
         <ion-label>ايونيك</ion-label>
       </ion-item>
       </ion-card>
-      <ion-card>
+     
+
+      -->
+
+      
+          <ion-row>
+            <ion-col class="ion-text-center">    
+                          <img  (click)="goToTutors()" class = "courses-images "  src="assets/ionic.png">        
+            </ion-col>
+          </ion-row>
+       
+
+        <!--
+           <ion-card>
           <ion-item (click)="goToTutors()">
             <ion-thumbnail slot="end">
               <img src="assets/avatar/frontEndjpg.jpg">
@@ -35,5 +62,24 @@
           </ion-item>
           
           </ion-card>
-</ion-list>
+
+
+        -->
+
+       
+            <ion-row>
+              <ion-col class="ion-text-center">    
+                            <img  (click)="goToTutors()" class = "courses-images "  src="assets/xd.png">        
+              </ion-col>
+            </ion-row>
+         
+
+          
+              <ion-row>
+                <ion-col class="ion-text-center">    
+                              <img  (click)="goToTutors()" class = "courses-images "  src="assets/html.png">        
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
 </ion-content>

@@ -20,7 +20,10 @@ const routes: Routes = [
   { path: 'courses', 
     loadChildren: './pages/courses/courses.module#CoursesPageModule' },
   { path: 'tutors', loadChildren: './pages/tutors/tutors.module#TutorsPageModule' },
-  { path: 'tutor', loadChildren: './pages/tutor/tutor.module#TutorPageModule' }
+  { path: 'tutor', loadChildren: './pages/tutor/tutor.module#TutorPageModule' },
+  { path: 'firstpage', loadChildren: './pages/firstpage/firstpage.module#FirstpagePageModule' },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'registerr', loadChildren: './pages/registerr/registerr.module#RegisterrPageModule' }
 ];
 
 @NgModule({

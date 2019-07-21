@@ -1,0 +1,15 @@
+ion-content{
+    --background: url('../background.jpg');
+}
+
+.courses-images {
+    height: 100px;
+    width:400px;
+    margin:auto;
+    margin-top:30px;
+    text-align: center
+}
+
+.courses-images:hover {
+    cursor:pointer;
+}
