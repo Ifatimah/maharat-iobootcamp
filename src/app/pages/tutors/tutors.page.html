@@ -8,67 +8,20 @@
 </ion-header>
 
 <ion-content style="--background: url('../background.jpg') ">
-<ion-list>
+<ion-list  *ngIf="tutor">
 
 
-    <ion-card >
+    <ion-card *ngFor="let i of tutor " (click)="goToTutor(i.id)">
         <ion-item (click)="goToTutor()" class ="ion-text-right"> 
           <ion-thumbnail slot="end">
-            <img  src="assets\avatar\yosri.jpg">
+            <img  src="{{ i.imageURL }}">
           </ion-thumbnail>
           <ion-label>
-              <h1>يسري يحمد</h1>
-              <p>خبير دروبال</p>
+              <h1>{{i.name}} </h1>
+              <p>{{i.description}} </p>
           </ion-label>
         </ion-item>
         </ion-card>
-
-
-        <ion-card>
-            <ion-item (click)="goToTutor()" class ="ion-text-right">
-              <ion-thumbnail slot="end">
-                <img src="assets\avatar\abdullah.jpg">
-              </ion-thumbnail>
-              <ion-label>
-                  <h1>عبدالله التايه</h1>
-                  <p>مصمم</p>
-              </ion-label>
-            </ion-item>
-            </ion-card>
-
-            <ion-card>
-                <ion-item (click)="goToTutor()" class ="ion-text-right"> 
-                  <ion-thumbnail slot="end">
-                    <img src="assets\avatar\ahmad_aboyahia.jpg">
-                  </ion-thumbnail>
-                  <ion-label>
-                      <h1> أحمد أبويحيى</h1>
-                      <p>مطور واجهات أمامية</p>
-                  </ion-label>
-                </ion-item>
-                </ion-card>
-                <ion-card>
-                    <ion-item (click)="goToTutor()" class ="ion-text-right">
-                      <ion-thumbnail slot="end">
-                        <img src="assets\avatar\abdulrahman.jpg">
-                      </ion-thumbnail>
-                      <ion-label>
-                          <h1>عبدالرحمن إبراهيم</h1>
-                          <p>خبير ايونيك و دروبال</p>
-                      </ion-label>
-                    </ion-item>
-                    </ion-card>
-                    <ion-card>
-                        <ion-item (click)="goToTutor()" class ="ion-text-right">
-                          <ion-thumbnail slot="end">
-                            <img src="assets\avatar\ahmad_aboghazalah.jpg">
-                          </ion-thumbnail>
-                          <ion-label>
-                              <h1>أحمد أبوغزالة</h1>
-                              <p>خبير ايونيك</p>
-                          </ion-label>
-                        </ion-item>
-                        </ion-card>
 
 </ion-list>
 </ion-content>

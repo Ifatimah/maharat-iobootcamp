@@ -16,14 +16,27 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   { path: 'topic', 
-    loadChildren: './pages/topic/topic.module#TopicPageModule' },
+    loadChildren: './pages/topic/topic.module#TopicPageModule' 
+  },
   { path: 'courses', 
-    loadChildren: './pages/courses/courses.module#CoursesPageModule' },
-  { path: 'tutors', loadChildren: './pages/tutors/tutors.module#TutorsPageModule' },
-  { path: 'tutor', loadChildren: './pages/tutor/tutor.module#TutorPageModule' },
-  { path: 'firstpage', loadChildren: './pages/firstpage/firstpage.module#FirstpagePageModule' },
-  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
-  { path: 'registerr', loadChildren: './pages/registerr/registerr.module#RegisterrPageModule' }
+    loadChildren: './pages/courses/courses.module#CoursesPageModule'
+   },
+  { path: 'tutors',
+   loadChildren: './pages/tutors/tutors.module#TutorsPageModule'
+   },
+  { path: 'tutor/:Id',
+   loadChildren: './pages/tutor/tutor.module#TutorPageModule' 
+  },
+  { path: 'firstpage',
+   loadChildren: './pages/firstpage/firstpage.module#FirstpagePageModule'
+   },
+  { path: 'login',
+   loadChildren: './pages/login/login.module#LoginPageModule'
+   },
+  { path: 'registerr', 
+  loadChildren: './pages/registerr/registerr.module#RegisterrPageModule' 
+},  { path: 'booking', loadChildren: './pages/booking/booking.module#BookingPageModule' }
+
 ];
 
 @NgModule({

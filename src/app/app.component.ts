@@ -33,8 +33,8 @@ export class AppComponent {
     }
     ,
     {
-      title: 'تسجيل الخروج ',
-      url: '/',
+      title: 'التسجيل / تسجيل الدخول  ',
+      url: '/firstpage',
       icon: ''
     }
   ];

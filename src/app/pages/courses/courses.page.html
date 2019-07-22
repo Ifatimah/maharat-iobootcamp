@@ -22,64 +22,15 @@
   </ion-item>
   </ion-card>
 -->
-<ion-grid > 
-  <ion-row >
+<ion-grid *ngIf="topic" > 
+  <ion-row *ngFor="let i of topic" (click)="goToTutors()">
     <ion-col class="ion-text-center" >    
-                  <img  (click)="goToTutors()" class = "courses-images "  src="assets/drupal.png">        
+                  <img class = "courses-images "  src="{{ i.imageURL }}">        
     </ion-col>
   </ion-row>
 
  
 
- <!--
-  <ion-card>
-      <ion-item (click)="goToTutors()">
-        <ion-thumbnail slot="end">
-          <img src="assets/avatar/ionic.png">
-        </ion-thumbnail>
-        <ion-label>ايونيك</ion-label>
-      </ion-item>
-      </ion-card>
-     
-
-      -->
-
-      
-          <ion-row>
-            <ion-col class="ion-text-center">    
-                          <img  (click)="goToTutors()" class = "courses-images "  src="assets/ionic.png">        
-            </ion-col>
-          </ion-row>
-       
-
-        <!--
-           <ion-card>
-          <ion-item (click)="goToTutors()">
-            <ion-thumbnail slot="end">
-              <img src="assets/avatar/frontEndjpg.jpg">
-            </ion-thumbnail>
-            <ion-label>تطوير الواجهات الأمامية</ion-label>
-          </ion-item>
-          
-          </ion-card>
-
-
-        -->
-
-       
-            <ion-row>
-              <ion-col class="ion-text-center">    
-                            <img  (click)="goToTutors()" class = "courses-images "  src="assets/xd.png">        
-              </ion-col>
-            </ion-row>
-         
-
-          
-              <ion-row>
-                <ion-col class="ion-text-center">    
-                              <img  (click)="goToTutors()" class = "courses-images "  src="assets/html.png">        
-                </ion-col>
-              </ion-row>
-            </ion-grid>
+  </ion-grid>
 
 </ion-content>

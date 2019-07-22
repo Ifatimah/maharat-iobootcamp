@@ -1,5 +1,7 @@
 {
   "name": "maharat",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -3,38 +3,33 @@
       <ion-buttons slot="start">
         <ion-back-button defaultHref="tutors"></ion-back-button>
       </ion-buttons>
-    <ion-title class ="ion-text-right">يسري يحمد</ion-title>
+    <ion-title class ="ion-text-right"> {{tutor.name}}</ion-title>
     </ion-toolbar>
   </ion-header>
 
 <ion-content style="--background: url('../background.jpg') ">
-    <ion-list>
+    <ion-list *ngIf="tutor">
         <ion-card>
             <ion-item class ="ion-text-right">
               <ion-thumbnail slot="end">
-                <img src="assets\avatar\yosri.jpg">
+                <img src="{{ tutor.imageURL }}">
               </ion-thumbnail>
               <ion-label>
-                  <h1>يسري يحمد</h1>
-                  <p>خبير دروبال</p><br>
+                  <h1>{{tutor.name}}  </h1>
+                  <p>{{tutor.description}} </p><br>
               </ion-label>
               
             </ion-item>
             <ion-item class ="ion-text-right">
                 <ion-label>التقييم</ion-label>   <ion-icon slot="end" name="star"></ion-icon>
               </ion-item>
-              <ion-item class ="ion-text-right">
-                  <ion-label >حجز موعد </ion-label>
-                  <ion-datetime displayFormat="MM/DD/YYYY" min="2019-07-24" value="2019-07-24"></ion-datetime>
-                </ion-item>
                 <ion-item class ="ion-text-right">
                     <ion-label>حجز موعد </ion-label>
                     <!--<ion-label position="floating">حجز موعد </ion-label>-->
                     <ion-datetime displayFormat="MM/DD/YYYY" min="2019-07-24" value="2019-07-24"></ion-datetime>
                   </ion-item><br>
                   <div class = "ion-text-right">
-                  <ion-button >درس مباشر </ion-button><br><br>
-                  <ion-button >رسالة</ion-button>
+                  <ion-button (click)="toConfirm()">حجز موعد  </ion-button><br><br>
                 </div>
           </ion-card>
      </ion-list>

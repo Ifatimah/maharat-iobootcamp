@@ -1,5 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { TutorInterface } from 'src/app/interfaces/tutor.interface';
+import { TutorService } from 'src/app/services/tutor/tutor.service';
 
 @Component({
   selector: 'app-tutors',
@@ -7,14 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tutors.page.scss'],
 })
 export class TutorsPage implements OnInit {
-
-  constructor(private router: Router) { }
+  tutor: TutorInterface[] = null;
+  constructor(private tutorService: TutorService, private router: Router) { }
 
   ngOnInit() {
-  }
-  goToTutor() {
-    console.log('hi');
-    this.router.navigate(['/tutor']);
+    console.log(this.tutorService.getAllTutors());
+    this.tutor = this.tutorService.getAllTutors();
+    // this.getAllTopic();
   }
 
+  goToTutor(id: string) {
+    console.log('id: ', id);
+    this.router.navigate(['/', 'tutor', id]);
+  }
 }

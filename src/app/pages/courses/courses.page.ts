@@ -1,5 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { TopicService } from 'src/app/services/topic/topic.service';
+import { TopicInterface } from 'src/app/interfaces/topic.interface';
 
 @Component({
   selector: 'app-courses',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses.page.scss'],
 })
 export class CoursesPage implements OnInit {
+  topic: TopicInterface[] = null;
 
-  constructor(private router: Router) { }
+  constructor(private topicService: TopicService, private router: Router) { }
 
   ngOnInit() {
+    console.log(this.topicService.getAllTopic());
+    this.topic = this.topicService.getAllTopic();
+    // this.getAllTopic();
   }
   goToTutors(){
     console.log('hi');
